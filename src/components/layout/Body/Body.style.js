@@ -54,5 +54,12 @@ export const Number = styled.span`
 font-size: 40px;
 font-weight: bold;
 color:#e2e8f0;
-/* ${({ count }) => !count > 50 ? `color:red` : `color:black`} */
+${({ count }) => !count > 20 ? `color:red` : `color:#e2e8f0`}
+`
+
+export const Span = styled.div`
+height: 8px;
+background-color: purple;
+border-radius: 4px;
+direction: rtl;
 `

@@ -1,8 +1,13 @@
-import { BodyContainer, CountdownContainer, IconContainer, SideBarContaner } from "./Body.style";
+import { BodyContainer, Number,CountdownContainer, IconContainer, Indicator, SideBarContaner, Title, Span } from "./Body.style";
 import { BsXCircle, BsJustify } from "react-icons/bs"
 import { useState } from "react";
+import {useCount} from "../../Context/CountProvider"
+
 
 const Body = () => {
+    const counter = useCount()
+
+
     const [isExpand, setIsExpand] = useState(true);
 
     return (<BodyContainer>
@@ -13,7 +18,17 @@ const Body = () => {
             </IconContainer>
         </SideBarContaner>
 
-        <CountdownContainer></CountdownContainer>
+        <CountdownContainer>
+            <Title>
+                Countdown
+            </Title>
+            <Number>
+                {counter}
+            </Number>
+            <Indicator>
+                <div  style={{ width: `${counter}%` }}><Span></Span></div>
+            </Indicator>
+        </CountdownContainer>
     </BodyContainer>);
 }
 
