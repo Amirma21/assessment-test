@@ -1,0 +1,44 @@
+{
+  "user": [
+    {
+      "userName": "erfan",
+      "role": "client",
+      "id": 1
+    },
+    {
+      "userName": "farid",
+      "role": "client",
+      "id": 2
+    },
+    {
+      "userName": "erfan",
+      "role": "client",
+      "id": 3
+    },
+    {
+      "userName": "ali",
+      "role": "adviser",
+      "id": 4
+    },
+    {
+      "userName": "ali",
+      "role": "client",
+      "id": 5
+    },
+    {
+      "userName": "ali",
+      "role": "client",
+      "id": 6
+    },
+    {
+      "userName": "erfan",
+      "role": "adviser",
+      "id": 7
+    },
+    {
+      "userName": "ali",
+      "role": "client",
+      "id": 8
+    }
+  ]
+}

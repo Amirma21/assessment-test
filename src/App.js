@@ -1,20 +1,15 @@
 
+import { Provider } from 'react-redux';
 import './App.css';
-import CountProvider from './components/Context/CountProvider';
-import Body from '../src/components/Layout/Body/Body';
-import Footer from '../src/components/Layout/Footer/Footer';
-import Header from '../src/components/Layout/Header/Header';
+import RoleList from './components/Roles/RoleList';
+import { store } from './components/redux/store';
+
 
 function App() {
   return (
-    <>
-      <CountProvider>
-        <Header/>
-        <Body/>
-        <Footer/>
-     
-      </CountProvider>
-    </>
+    <Provider store={store}>
+      <RoleList />
+    </Provider>
   );
 }
 
