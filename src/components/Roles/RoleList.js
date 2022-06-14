@@ -10,6 +10,7 @@ const RoleList = () => {
 
 
     const userData = useSelector((state) => state.data)
+    console.log(userData);
 
     const dispatch = useDispatch()
 

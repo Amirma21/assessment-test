@@ -24,7 +24,7 @@ const SetRole = ({ show, handleClose }) => {
 
 
     const [formData, setFormData] = useState({
-        userName: "", role: ""
+        userName: "", role: "" 
     })
 
 
@@ -60,7 +60,7 @@ const SetRole = ({ show, handleClose }) => {
                             <Label>Role</Label>
                             <CreatableSelect name="role" defaultValue={formData.role}
                                 classNamePrefix='select' options={roles}
-                                onChange={(e) => setFormData({ ...formData, role: e.value })}>
+                                onChange={(e) => setFormData({ ...formData, role: e.value , id : Date.now() })}>
                             </CreatableSelect>
                         </FormGroup>
 
@@ -68,7 +68,7 @@ const SetRole = ({ show, handleClose }) => {
 
                 </ModalBody>
                 <ModalFooter>
-                    <Button disabled={!formData.userName && !formData.role} color="success" onClick={setRoleBtnHandler}> set role</Button>
+                    <Button disabled={!formData.userName && !formData.role} color="success" onClick={setRoleBtnHandler}> set Role</Button>
                     <Button color="danger" onClick={() => handleClose()}> cancle</Button>
                 </ModalFooter>
             </Modal>

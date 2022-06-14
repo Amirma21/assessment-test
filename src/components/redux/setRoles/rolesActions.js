@@ -8,7 +8,7 @@ export const SetRols = (data) => async (dispatch) => {
         const result = await axios.post("http://localhost:3001/user", data)
         dispatch({
             type: SET_ROLES,
-            payload: data
+            payload: data,
         })
     } catch (error) {
         dispatch(

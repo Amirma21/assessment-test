@@ -8,7 +8,7 @@ const initialState = {
 export const rolesReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_ROLES:
-            return { ...state, data: action.payload }
+            return { ...state,  data: [...state.data, action.payload ] }
         case GET_ROLES:
             return { ...state , data : action.payload}
 
