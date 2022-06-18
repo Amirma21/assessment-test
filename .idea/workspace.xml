@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46c8fcca-1926-4370-a162-60a703204101" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Roles/RoleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Roles/RoleList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Roles/SetRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Roles/SetRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/redux/setRoles/rolesActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/redux/setRoles/rolesActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/redux/setRoles/rolesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/redux/setRoles/rolesReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/redux/setRoles/rolesTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/redux/setRoles/rolesTypes.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2AiV5vVeoj3DlYusTnTw0i8xjig" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/charlie/Desktop/Assessment test",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46c8fcca-1926-4370-a162-60a703204101" name="Changes" comment="" />
+      <created>1655492212477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655492212477</updated>
+      <workItem from="1655492216277" duration="44000" />
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Card, CardBody, CardTitle, Button, Table } from "reactstrap";
-import { getRoles } from "../redux/setRoles/rolesActions";
+import { deleteRole, getRoles } from "../redux/setRoles/rolesActions";
+import DeleteRole from "./DeleteRole";
 import SetRole from "./SetRole";
 
 const RoleList = () => {
     const [showSetRole, setShowSetRole] = useState(false)
+    const [showDeleteRoleModal , setShowDeleteRoleModal] =  useState(false)
+    const [selectedId , setSelectedId] = useState()
 
 
 
@@ -18,6 +21,11 @@ const RoleList = () => {
     useEffect(() => {
         dispatch(getRoles())
     }, [])
+
+    const deleteRoleHandler = (id) => {
+       setSelectedId(id)
+       setShowDeleteRoleModal(true)
+    }
 
 
 
@@ -46,7 +54,7 @@ const RoleList = () => {
                                     </td>
                                     <td>{user.role}</td>
                                     <td className='text-center'>
-                                        <Button color='danger'>Remove</Button>
+                                        <Button color='danger' onClick={() => deleteRoleHandler(user.id)}>Remove</Button>
                                     </td>
                                 </tr>
                             })}
@@ -57,6 +65,7 @@ const RoleList = () => {
             </Card>
         </div>
         <SetRole show={showSetRole} handleClose={() => setShowSetRole(!showSetRole)} />
+        <DeleteRole selectedId = {selectedId} show= {showDeleteRoleModal} handleClose = {()=>setShowDeleteRoleModal(!showDeleteRoleModal)} />
     </>);
 }
 

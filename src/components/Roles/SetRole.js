@@ -24,7 +24,7 @@ const SetRole = ({ show, handleClose }) => {
 
 
     const [formData, setFormData] = useState({
-        userName: "", role: "" 
+        userName: "", role: ""
     })
 
 
@@ -60,7 +60,7 @@ const SetRole = ({ show, handleClose }) => {
                             <Label>Role</Label>
                             <CreatableSelect name="role" defaultValue={formData.role}
                                 classNamePrefix='select' options={roles}
-                                onChange={(e) => setFormData({ ...formData, role: e.value , id : Date.now() })}>
+                                onChange={(e) => setFormData({ ...formData, role: e.value, id: Date.now() })}>
                             </CreatableSelect>
                         </FormGroup>
 
